@@ -21,3 +21,9 @@ node server.js --listen 0.0.0.0 --port 8181 -w /workspace/src &
 cd /workspace/src/smart_grasping_sandbox/notebooks
 jupyter notebook --ip=0.0.0.0 --allow-root
 
+DISPLAY=10.0.75.1:0.0
+export DISPLAY
+
+terminator
+
+
