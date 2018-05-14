@@ -10,7 +10,7 @@ RUN apt-get update && \
     wget http://packages.osrfoundation.org/gazebo.key -O - | apt-key add - && \
     apt-get update && \
     apt-get remove -y gazebo2 && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y gazebo7 ros-kinetic-gazebo7-ros-pkgs ros-kinetic-gazebo7-ros-control ros-kinetic-controller-manager ros-kinetic-ros-controllers python-pip && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y gazebo7 ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control ros-kinetic-controller-manager ros-kinetic-ros-controllers python-pip && \
     mkdir -p /workspace/src && \
     cd /workspace/ && \
     source /opt/ros/kinetic/setup.bash && \
